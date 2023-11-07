@@ -9,17 +9,18 @@ Input/Output:
     [input] array.integer inputArray
 */
 
-// Solution: 
+// Give an array of integers, replace all the occurrences of elementToReplace with subtractionElem.
+// Solution:
 
 const arrayToReplace = (inputArray, elementToReplace, substrationElem) => {
-    inputArray.map((element, index)=> {
-        if(element === elementToReplace){
-            inputArray[index] = substrationElem
+    inputArray.map((element, index) => {
+        if (element === elementToReplace) {
+            inputArray[index] = substrationElem;
         }
-    })
+    });
     console.log(inputArray);
-}
+};
 
-arrayToReplace([1, 2, 1], 1, 3)
+arrayToReplace([1, 2, 1], 1, 3);
 
 // Output = [3, 2, 3].
